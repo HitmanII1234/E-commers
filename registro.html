@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crea tu cuenta en E-Commers Tecnm y disfruta de beneficios exclusivos, seguimiento de pedidos y ofertas personalizadas." />
+  <title>E-Commers Tecnm | Registro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">⚡ E-Commers Tecnm</a>
+      <ul class="nav-menu">
+        <li><a href="index.html"><span class="nav-icon">🏠</span> <span>Inicio</span></a></li>
+        <li><a href="registro.html"><span class="nav-icon">📝</span> <span>Registro</span></a></li>
+        <li><a href="nosotros.html"><span class="nav-icon">👥</span> <span>Quiénes somos</span></a></li>
+        <li><a href="catalogo.html"><span class="nav-icon">🛍️</span> <span>Catálogo</span></a></li>
+        <li><a href="carrito.html"><span class="nav-icon">🛒</span> <span>Carrito</span> <span class="nav-cart-badge">0</span></a></li>
+        <li><a href="busqueda.html"><span class="nav-icon">🔍</span> <span>Búsqueda</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HEADER ════════════════════════════════════════════ -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Crear cuenta</h1>
+      <p>Únete a más de 50,000 clientes satisfechos y empieza a disfrutar.</p>
+      <div class="page-divider"></div>
+    </div>
+  </div>
+
+  <!-- ═══ CONTENIDO ═════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+      <div class="register-wrap">
+
+        <!-- Info lateral -->
+        <div class="register-info">
+          <h2>Beneficios de <span>ser miembro</span></h2>
+          <p>Al registrarte en E-Commers Tecnm obtienes acceso a descuentos exclusivos, seguimiento de tus pedidos en tiempo real y soporte personalizado 24/7.</p>
+
+          <div class="register-perks">
+            <div class="perk-item">
+              <div class="perk-icon">🎁</div>
+              <div>
+                <h4>10% de descuento en tu primera compra</h4>
+                <p>Cupón enviado inmediatamente al registrarte.</p>
+              </div>
+            </div>
+            <div class="perk-item">
+              <div class="perk-icon">🚚</div>
+              <div>
+                <h4>Envío gratis en compras mayores a $999</h4>
+                <p>Aplicado automáticamente en tu carrito.</p>
+              </div>
+            </div>
+            <div class="perk-item">
+              <div class="perk-icon">🔔</div>
+              <div>
+                <h4>Alertas de precio en tus favoritos</h4>
+                <p>Te avisamos cuando baje el precio del producto.</p>
+              </div>
+            </div>
+            <div class="perk-item">
+              <div class="perk-icon">🏆</div>
+              <div>
+                <h4>Programa de lealtad TechPoints</h4>
+                <p>Acumula puntos por cada compra y canjéalos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="register-form-card">
+          <h3>📝 Crear mi cuenta</h3>
+
+          <!-- Alertas -->
+          <div class="alert alert-success" id="alert-success">
+            <span>✅</span>
+            <span>¡Registro exitoso! Bienvenido a E-Commers Tecnm.</span>
+          </div>
+          <div class="alert alert-error" id="alert-error">
+            <span>❌</span>
+            <span></span>
+          </div>
+
+          <form id="register-form" novalidate>
+
+            <!-- Nombre -->
+            <div class="form-group">
+              <label for="reg-nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="reg-nombre"
+                name="nombre"
+                placeholder="Ej. María García López"
+                autocomplete="name"
+              />
+              <span class="form-error" id="err-nombre"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="reg-email">Correo electrónico</label>
+              <input
+                type="email"
+                id="reg-email"
+                name="email"
+                placeholder="usuario@ejemplo.com"
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                autocomplete="email"
+              />
+              <span class="form-error" id="err-email"></span>
+            </div>
+
+            <!-- Contraseñas -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reg-password">Contraseña</label>
+                <input
+                  type="password"
+                  id="reg-password"
+                  name="password"
+                  placeholder="Mínimo 8 caracteres"
+                  autocomplete="new-password"
+                />
+                <span class="form-error" id="err-password"></span>
+              </div>
+              <div class="form-group">
+                <label for="reg-confirm">Confirmar contraseña</label>
+                <input
+                  type="password"
+                  id="reg-confirm"
+                  name="confirm"
+                  placeholder="Repite la contraseña"
+                  autocomplete="new-password"
+                />
+                <span class="form-error" id="err-confirm"></span>
+              </div>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-group">
+              <label for="reg-nacimiento">Fecha de nacimiento</label>
+              <input
+                type="date"
+                id="reg-nacimiento"
+                name="nacimiento"
+                max="2010-12-31"
+              />
+              <span class="form-error" id="err-nacimiento"></span>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-group">
+              <label for="reg-telefono">Teléfono (10 dígitos)</label>
+              <input
+                type="tel"
+                id="reg-telefono"
+                name="telefono"
+                placeholder="5512345678"
+                maxlength="10"
+                autocomplete="tel"
+              />
+              <span class="form-error" id="err-telefono"></span>
+            </div>
+
+            <!-- Términos y condiciones -->
+            <div class="form-group">
+              <div class="checkbox-group">
+                <input type="checkbox" id="terms-checkbox" name="terminos" />
+                <label for="terms-checkbox">
+                  He leído y acepto los
+                  <a href="#" onclick="return false;">Términos y Condiciones</a>
+                  y el
+                  <a href="#" onclick="return false;">Aviso de Privacidad</a>
+                  de E-Commers Tecnm.
+                </label>
+              </div>
+            </div>
+
+            <!-- Botón enviar (deshabilitado por defecto) -->
+            <button
+              type="submit"
+              id="btn-submit-register"
+              class="btn btn-primary"
+              disabled
+              style="width:100%;justify-content:center;padding:0.9rem"
+            >
+              🚀 Crear mi cuenta
+            </button>
+
+            <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-top:1rem">
+              ¿Ya tienes cuenta? <a href="index.html" style="color:var(--primary-lt)">Inicia sesión</a>
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">⚡ E-Commers Tecnm</span>
+        <p>Tu destino de tecnología premium. Los mejores gadgets al mejor precio, con envío rápido a todo México.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="registro.html">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@E-Commers Tecnm.mx">hola@E-Commers Tecnm.mx</a></li>
+          <li><a href="tel:+525512345678">55 1234 5678</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 E-Commers Tecnm. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ en México</span>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

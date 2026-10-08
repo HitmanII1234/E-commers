@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Busca productos en E-Commers Tecnm — Encuentra laptops, smartphones, audio, wearables y más con nuestra potente herramienta de búsqueda." />
+  <title>E-Commers Tecnm | Búsqueda de productos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">⚡ E-Commers Tecnm</a>
+      <ul class="nav-menu">
+        <li><a href="index.html"><span class="nav-icon">🏠</span> <span>Inicio</span></a></li>
+        <li><a href="registro.html"><span class="nav-icon">📝</span> <span>Registro</span></a></li>
+        <li><a href="nosotros.html"><span class="nav-icon">👥</span> <span>Quiénes somos</span></a></li>
+        <li><a href="catalogo.html"><span class="nav-icon">🛍️</span> <span>Catálogo</span></a></li>
+        <li><a href="carrito.html"><span class="nav-icon">🛒</span> <span>Carrito</span> <span class="nav-cart-badge">0</span></a></li>
+        <li><a href="busqueda.html"><span class="nav-icon">🔍</span> <span>Búsqueda</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ BÚSQUEDA ══════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+      <section class="search-section">
+
+        <!-- Hero de búsqueda -->
+        <div class="search-hero">
+          <h2>¿Qué estás <span>buscando</span>?</h2>
+          <p>Encuentra exactamente lo que necesitas entre más de 5,000 productos disponibles.</p>
+
+          <form id="search-form" onsubmit="return false;">
+            <div class="search-box">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Ej. auriculares, laptop gaming, smartwatch..."
+                aria-label="Campo de búsqueda de productos"
+                autocomplete="off"
+              />
+              <button type="submit" id="btn-search" aria-label="Buscar productos">
+                🔍 Buscar
+              </button>
+            </div>
+          </form>
+
+          <!-- Tags de búsqueda popular -->
+          <div class="search-tags" role="list" aria-label="Búsquedas populares">
+            <span class="search-tag" role="listitem" tabindex="0">💻 Laptop</span>
+            <span class="search-tag" role="listitem" tabindex="0">🎧 Audífonos</span>
+            <span class="search-tag" role="listitem" tabindex="0">📱 Smartphone</span>
+            <span class="search-tag" role="listitem" tabindex="0">⌚ Smartwatch</span>
+            <span class="search-tag" role="listitem" tabindex="0">📸 Cámara</span>
+            <span class="search-tag" role="listitem" tabindex="0">🎮 Gaming</span>
+            <span class="search-tag" role="listitem" tabindex="0">🖥️ Monitor</span>
+          </div>
+        </div>
+
+        <!-- Área de resultados -->
+        <div class="search-results-area">
+
+          <!-- Mensaje de resultados -->
+          <p class="search-results-query" id="search-results-query" aria-live="polite"></p>
+
+          <!-- Header de resultados (oculto al inicio) -->
+          <div
+            class="search-results-header"
+            id="results-header"
+            style="display:none"
+            aria-label="Encabezado de resultados"
+          >
+            <h3>Productos encontrados</h3>
+            <span id="results-count">0 productos</span>
+          </div>
+
+          <!-- Grid de resultados -->
+          <div
+            class="search-products-grid"
+            id="search-results-area"
+            role="list"
+            aria-label="Resultados de búsqueda"
+          ></div>
+
+          <!-- Placeholder inicial -->
+          <div class="search-placeholder" id="search-placeholder">
+            <div class="search-placeholder-icon">🔍</div>
+            <h3 style="font-family:'Outfit',sans-serif;margin-bottom:0.5rem">Realiza tu primera búsqueda</h3>
+            <p>Escribe el nombre de un producto, categoría o marca y presiona <strong>Buscar</strong>.</p>
+            <div style="margin-top:2rem">
+              <a href="catalogo.html" class="btn btn-secondary">🛍️ Ver catálogo completo</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">⚡ E-Commers Tecnm</span>
+        <p>Tu destino de tecnología premium. Los mejores gadgets al mejor precio, con envío rápido a todo México.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="registro.html">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@E-Commers Tecnm.mx">hola@E-Commers Tecnm.mx</a></li>
+          <li><a href="tel:+525512345678">55 1234 5678</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 E-Commers Tecnm. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ en México</span>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

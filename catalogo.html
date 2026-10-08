@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Catálogo E-Commers Tecnm — Explora nuestra colección de laptops, smartphones, audio, wearables y más. Encuentra el gadget perfecto para ti." />
+  <title>E-Commers Tecnm | Catálogo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">⚡ E-Commers Tecnm</a>
+      <ul class="nav-menu">
+        <li><a href="index.html"><span class="nav-icon">🏠</span> <span>Inicio</span></a></li>
+        <li><a href="registro.html"><span class="nav-icon">📝</span> <span>Registro</span></a></li>
+        <li><a href="nosotros.html"><span class="nav-icon">👥</span> <span>Quiénes somos</span></a></li>
+        <li><a href="catalogo.html"><span class="nav-icon">🛍️</span> <span>Catálogo</span></a></li>
+        <li><a href="carrito.html"><span class="nav-icon">🛒</span> <span>Carrito</span> <span
+              class="nav-cart-badge">0</span></a></li>
+        <li><a href="busqueda.html"><span class="nav-icon">🔍</span> <span>Búsqueda</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HEADER ════════════════════════════════════════════ -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Catálogo de productos</h1>
+      <p>Tecnología de punta para cada necesidad y presupuesto.</p>
+      <div class="page-divider"></div>
+    </div>
+  </div>
+
+  <!-- ═══ CATÁLOGO ══════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+      <section class="catalog-section">
+
+        <!-- Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="catalog-filters">
+            <button class="filter-btn active" data-filter="all">🔘 Todos</button>
+            <button class="filter-btn" data-filter="laptops">💻 Laptops</button>
+            <button class="filter-btn" data-filter="smartphones">📱 Smartphones</button>
+            <button class="filter-btn" data-filter="audio">🎧 Audio</button>
+            <button class="filter-btn" data-filter="wearables">⌚ Wearables</button>
+            <button class="filter-btn" data-filter="tablets">📱 Tablets</button>
+            <button class="filter-btn" data-filter="ropa">👕 Ropa</button>
+          </div>
+          <div class="catalog-sort">
+            <select id="sort-select" aria-label="Ordenar productos">
+              <option>Más populares</option>
+              <option>Precio: menor a mayor</option>
+              <option>Precio: mayor a menor</option>
+              <option>Más nuevos</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Grid de productos -->
+        <div class="catalog-grid">
+
+          <!-- 1 -->
+          <article class="product-card catalog-card" data-category="audio">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-hot">🔥 Hot</span>
+              <img src="images/product_headphones.png"
+                alt="Audífonos ProSound X9 inalámbricos con cancelación de ruido" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Audio</span>
+              <h3 class="product-name">Audífonos ProSound X9</h3>
+              <div class="product-rating">★★★★★ <span>(842)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Cancelación de ruido activa · Bluetooth 5.3 · 30h
+                batería</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$2,499</span>
+                  <span class="product-price-old">$3,200</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Audífonos ProSound X9">🛒
+                  Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card catalog-card" data-category="laptops">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-new">✨ Nuevo</span>
+              <img src="images/product_laptop.png" alt="UltraBook Pro 14 laptop ultradelgada de alto rendimiento" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptops</span>
+              <h3 class="product-name">UltraBook Pro 14"</h3>
+              <div class="product-rating">★★★★☆ <span>(321)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Intel Core i7 · 16GB RAM · 512GB SSD · OLED 2K</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$18,999</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="UltraBook Pro 14&quot;">🛒
+                  Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card catalog-card" data-category="wearables">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-sale">💚 Oferta</span>
+              <img src="images/product_smartwatch.png" alt="Smartwatch FitPro Serie 5 con GPS y monitoreo de salud" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Wearables</span>
+              <h3 class="product-name">FitPro Serie 5</h3>
+              <div class="product-rating">★★★★★ <span>(1,204)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">GPS integrado · ECG · SpO2 · 7 días de batería</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$3,299</span>
+                  <span class="product-price-old">$4,500</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="FitPro Serie 5">🛒 Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card catalog-card" data-category="smartphones">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-new">✨ Nuevo</span>
+              <img src="images/product_phone.png" alt="Smartphone Galaxy Z Ultra con cámara de 200MP" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Smartphones</span>
+              <h3 class="product-name">Galaxy Z Ultra</h3>
+              <div class="product-rating">★★★★★ <span>(567)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Cámara 200MP · 5G · 6.8" AMOLED 120Hz · 5000mAh</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$24,999</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Galaxy Z Ultra">🛒 Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card catalog-card" data-category="tablets">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-hot">🔥 Hot</span>
+              <img src="images/product_tablet.png" alt="ViewMax Pro 11 tablet de alta resolución" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Tablets</span>
+              <h3 class="product-name">ViewMax Pro 11"</h3>
+              <div class="product-rating">★★★★☆ <span>(298)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Pantalla Liquid Retina · M2 chip · Compatible con
+                stylus</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$8,499</span>
+                  <span class="product-price-old">$9,800</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="ViewMax Pro 11&quot;">🛒
+                  Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card catalog-card" data-category="audio">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-sale">💚 Oferta</span>
+              <span style="font-size:3.5rem">🎵</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Audio</span>
+              <h3 class="product-name">SoundBar Elite X</h3>
+              <div class="product-rating">★★★★☆ <span>(184)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">2.1 canales · 120W · Dolby Atmos · Wi-Fi integrado
+              </p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$4,799</span>
+                  <span class="product-price-old">$6,200</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="SoundBar Elite X">🛒 Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="product-card catalog-card" data-category="laptops">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-sale">💚 Oferta</span>
+              <span style="font-size:3.5rem">🖥️</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptops</span>
+              <h3 class="product-name">GameBlade RTX 16"</h3>
+              <div class="product-rating">★★★★★ <span>(455)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">RTX 4070 · i9 13th Gen · 32GB RAM · 1TB NVMe</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$32,499</span>
+                  <span class="product-price-old">$38,000</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="GameBlade RTX 16&quot;">🛒
+                  Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="product-card catalog-card" data-category="smartphones">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-new">✨ Nuevo</span>
+              <span style="font-size:3.5rem">📲</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Smartphones</span>
+              <h3 class="product-name">PixelSnap Pro 8</h3>
+              <div class="product-rating">★★★★☆ <span>(223)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">IA fotográfica · 7 años de actualizaciones · Android
+                16</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$14,999</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="PixelSnap Pro 8">🛒 Agregar</button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ── ROPA ── -->
+
+          <!-- Camisa 1 -->
+          <article class="product-card catalog-card" data-category="ropa">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-new">✨ Nuevo</span>
+              <img src="images/camisa.png" alt="Camisa casual manga corta" style="object-fit:contain;padding:0.5rem" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Ropa</span>
+              <h3 class="product-name">Camisa Casual Clásica</h3>
+              <div class="product-rating">★★★★☆ <span>(48)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Tallas S–XL · Algodón 100% · Varios colores</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$350</span>
+                  <span class="product-price-old">$450</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Camisa Casual Clásica">🛒
+                  Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Camisa 2 -->
+          <article class="product-card catalog-card" data-category="ropa">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-hot">🔥 Hot</span>
+              <img src="images/camisa 2.png" alt="Camisa estampada moderna" style="object-fit:contain;padding:0.5rem" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Ropa</span>
+              <h3 class="product-name">Camisa Estampada</h3>
+              <div class="product-rating">★★★★★ <span>(32)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Tallas S–XL · Poliéster · Estampado exclusivo</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$420</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Camisa Estampada">🛒 Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sudadera 1 -->
+          <article class="product-card catalog-card" data-category="ropa">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-sale">💚 Oferta</span>
+              <img src="images/sudadera.png" alt="Sudadera con capucha abrigadora"
+                style="object-fit:contain;padding:0.5rem" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Ropa</span>
+              <h3 class="product-name">Sudadera con Capucha</h3>
+              <div class="product-rating">★★★★★ <span>(65)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Tallas S–XXL · Algodón/Poliéster · Con bolsillo</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$680</span>
+                  <span class="product-price-old">$850</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Sudadera con Capucha">🛒
+                  Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sudadera 2 -->
+          <article class="product-card catalog-card" data-category="ropa">
+            <div class="product-img-wrap">
+              <span class="product-badge badge-new">✨ Nuevo</span>
+              <img src="images/sudadera 2.png" alt="Sudadera oversize moderna"
+                style="object-fit:contain;padding:0.5rem" />
+            </div>
+            <div class="product-info">
+              <span class="product-category">Ropa</span>
+              <h3 class="product-name">Sudadera Oversize</h3>
+              <div class="product-rating">★★★★☆ <span>(27)</span></div>
+              <p style="font-size:0.78rem;color:var(--text-muted)">Tallas S–XL · Estilo urbano · Sin capucha</p>
+              <div class="product-price-row">
+                <div>
+                  <span class="product-price">$590</span>
+                </div>
+                <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Sudadera Oversize">🛒 Agregar</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">⚡ E-Commers Tecnm</span>
+        <p>Tu destino de tecnología premium. Los mejores gadgets al mejor precio, con envío rápido a todo México.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="registro.html">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@E-Commers Tecnm.mx">hola@E-Commers Tecnm.mx</a></li>
+          <li><a href="tel:+525512345678">55 1234 5678</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 E-Commers Tecnm. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ en México</span>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

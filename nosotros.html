@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Conoce al equipo detrás de E-Commers Tecnm. Somos estudiantes apasionados por la tecnología." />
+  <title>E-Commers Tecnm | Quiénes somos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── Estilos sencillos para esta página ── */
+    .about-simple {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .about-simple h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-lt, #67e8f9);
+    }
+
+    .about-simple p {
+      color: var(--text-muted, #94a3b8);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Tarjetas de equipo ── */
+    .team-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .member-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-4px);
+      border-color: #0056b3;
+    }
+
+    .member-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #007bff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 auto 1rem;
+    }
+
+    .member-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .member-info {
+      display: none;
+      margin-top: 1rem;
+    }
+
+    .member-info.show {
+      display: block;
+    }
+
+    .btn-ver-mas {
+      background: #eee;
+      border: 1px solid #ccc;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .btn-ver-mas:hover {
+      background: #ddd;
+    }
+
+    .member-role {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      background: rgba(6, 182, 212, 0.15);
+      color: #67e8f9;
+      margin-bottom: 0.75rem;
+    }
+
+    .member-email {
+      font-size: 0.78rem;
+      color: var(--text-muted, #94a3b8);
+      word-break: break-all;
+    }
+
+    .member-email a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .member-email a:hover {
+      color: #67e8f9;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">⚡ E-Commers Tecnm</a>
+      <ul class="nav-menu">
+        <li><a href="index.html"><span class="nav-icon">🏠</span> <span>Inicio</span></a></li>
+        <li><a href="registro.html"><span class="nav-icon">📝</span> <span>Registro</span></a></li>
+        <li><a href="nosotros.html"><span class="nav-icon">👥</span> <span>Quiénes somos</span></a></li>
+        <li><a href="catalogo.html"><span class="nav-icon">🛍️</span> <span>Catálogo</span></a></li>
+        <li><a href="carrito.html"><span class="nav-icon">🛒</span> <span>Carrito</span> <span
+              class="nav-cart-badge">0</span></a></li>
+        <li><a href="busqueda.html"><span class="nav-icon">🔍</span> <span>Búsqueda</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HEADER ════════════════════════════════════════════ -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Quiénes somos</h1>
+      <p>El equipo detrás de E-Commers Tecnm.</p>
+      <div class="page-divider"></div>
+    </div>
+  </div>
+
+  <!-- ═══ CONTENIDO ═════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+      <div class="about-simple">
+
+        <!-- Descripción -->
+        <h2>Nuestra historia</h2>
+        <p>
+          E-Commers Tecnm es un proyecto estudiantil creado con ganas de aprender y aplicar tecnología web.
+          Somos un pequeño equipo de programadores del Tecnológico Nacional de México en Tuxtla,
+          construyendo esta tienda como parte de nuestra formación académica.
+        </p>
+        <p>
+          Queremos ofrecer una experiencia de compra sencilla, con productos de calidad y buen diseño.
+          Este es nuestro primer proyecto de e-commerce y estamos orgullosos de él.
+        </p>
+
+        <!-- Equipo -->
+        <h2 style="margin-top: 2.5rem;">👥 Nuestro equipo</h2>
+
+        <div class="team-cards">
+
+          <!-- Integrante 1 -->
+          <div class="member-card">
+            <div class="member-avatar">EA</div>
+            <div class="member-name">Enrique Alejandro Alvarez Escobar</div>
+            <button class="btn-ver-mas" onclick="toggleInfo(this)">Ver más</button>
+            <div class="member-info">
+              <span class="member-role">💻 Programador</span>
+              <div class="member-email">
+                <a href="mailto:L24270365@tuxtla.tecnm.mx">L24270365@tuxtla.tecnm.mx</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 2 -->
+          <div class="member-card">
+            <div class="member-avatar">JG</div>
+            <div class="member-name">Gómez Gutiérrez José Luis</div>
+            <button class="btn-ver-mas" onclick="toggleInfo(this)">Ver más</button>
+            <div class="member-info">
+              <span class="member-role">💻 Programador</span>
+              <div class="member-email">
+                <a href="mailto:L24270340@tuxtla.tecnm.mx">L24270340@tuxtla.tecnm.mx</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 3 -->
+          <div class="member-card">
+            <div class="member-avatar">SL</div>
+            <div class="member-name">Luna Anton Sergio</div>
+            <button class="btn-ver-mas" onclick="toggleInfo(this)">Ver más</button>
+            <div class="member-info">
+              <span class="member-role">💻 Programador</span>
+              <div class="member-email">
+                <span style="color:#666;font-size:0.76rem;">Correo no disponible</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">⚡ E-Commers Tecnm</span>
+        <p>Proyecto estudiantil — TecNM Campus Tuxtla.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="registro.html">Crear cuenta</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 E-Commers Tecnm. Proyecto académico.</span>
+      <span>Hecho con ❤️ en Tuxtla</span>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="script.js"></script>
+  <script>
+    function toggleInfo(btn) {
+      const info = btn.nextElementSibling;
+      if (info.classList.contains('show')) {
+        info.classList.remove('show');
+        btn.textContent = 'Ver más';
+      } else {
+        info.classList.add('show');
+        btn.textContent = 'Ver menos';
+      }
+    }
+  </script>
+</body>
+
+</html>

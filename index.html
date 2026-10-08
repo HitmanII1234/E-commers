@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="E-Commers Tecnm — Tu destino de tecnología premium. Encuentra los mejores gadgets, laptops, smartphones y accesorios al mejor precio." />
+  <title>E-Commers Tecnm | Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">E-Commers Tecnm</a>
+      <ul class="nav-menu">
+        <li><a href="index.html"><span class="nav-icon">🏠</span> <span>Inicio</span></a></li>
+        <li><a href="registro.html"><span class="nav-icon">📝</span> <span>Registro</span></a></li>
+        <li><a href="nosotros.html"><span class="nav-icon">👥</span> <span>Quiénes somos</span></a></li>
+        <li><a href="catalogo.html"><span class="nav-icon">🛍️</span> <span>Catálogo</span></a></li>
+        <li><a href="carrito.html"><span class="nav-icon">🛒</span> <span>Carrito</span> <span
+              class="nav-cart-badge">0</span></a></li>
+        <li><a href="busqueda.html"><span class="nav-icon">🔍</span> <span>Búsqueda</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO SIMPLE ══════════════════════════════════════════════ -->
+  <section class="hero-simple" style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem;">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <img src="images/hero_banner.png" alt="Black Friday Sale"
+        style="width: 100%; max-width: 600px; border-radius: 8px; border: 1px solid #ccc; display: block; margin: 0 auto;">
+    </div>
+
+    <h1 style="font-size: 2.5rem; color: #000; margin-bottom: 1rem;">Bienvenido a nuestra tienda E-Commers</h1>
+    <p style="font-size: 1.1rem; color: #333; line-height: 1.6; margin-bottom: 2rem;">
+      Descubre los mejores productos a los mejores precios. Explora nuestras categorías y encuentra lo que necesitas
+      para tu día a día.
+    </p>
+
+    <h2 style="font-size: 1.8rem; color: #000; margin-bottom: 1rem;">Categorías Destacadas</h2>
+    <ul style="font-size: 1.1rem; line-height: 1.8; color: #333; margin-left: 2rem;">
+      <li><strong>Electrónica:</strong> Smartphones, Laptops y Accesorios.</li>
+      <li><strong>Ropa y Calzado:</strong> Moda para toda la familia.</li>
+      <li><strong>Hogar y Jardín:</strong> Muebles, Decoración y Herramientas.</li>
+      <li><strong>Deportes:</strong> Ropa deportiva, pesas y bicicletas.</li>
+    </ul>
+  </section>
+
+  <!-- ═══ PRODUCTOS DESTACADOS ════════════════════════════ -->
+  <section class="featured-section">
+    <div class="container">
+      <h2 class="section-title">Más <span>vendidos</span></h2>
+      <p class="section-subtitle">Los favoritos de nuestra comunidad esta semana</p>
+
+      <div class="featured-grid">
+
+        <!-- Producto 1 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge badge-hot">🔥 Hot</span>
+            <img src="images/product_headphones.png" alt="Audífonos ProSound X9 inalámbricos" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Audio</span>
+            <h3 class="product-name">Audífonos ProSound X9</h3>
+            <div class="product-rating">★★★★★ <span>(842 reseñas)</span></div>
+            <div class="product-price-row">
+              <div>
+                <span class="product-price">$2,499</span>
+                <span class="product-price-old">$3,200</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Audífonos ProSound X9">
+                🛒 Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge badge-new">✨ Nuevo</span>
+            <img src="images/product_laptop.png" alt="Laptop UltraBook Pro 14 de alto rendimiento" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Laptops</span>
+            <h3 class="product-name">UltraBook Pro 14"</h3>
+            <div class="product-rating">★★★★☆ <span>(321 reseñas)</span></div>
+            <div class="product-price-row">
+              <div>
+                <span class="product-price">$18,999</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="UltraBook Pro 14&quot;">
+                🛒 Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge badge-sale">💚 Oferta</span>
+            <img src="images/product_smartwatch.png" alt="Smartwatch FitPro Serie 5 con GPS" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Wearables</span>
+            <h3 class="product-name">FitPro Serie 5</h3>
+            <div class="product-rating">★★★★★ <span>(1,204 reseñas)</span></div>
+            <div class="product-price-row">
+              <div>
+                <span class="product-price">$3,299</span>
+                <span class="product-price-old">$4,500</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="FitPro Serie 5">
+                🛒 Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge badge-new">✨ Nuevo</span>
+            <img src="images/product_phone.png" alt="Smartphone Galaxy Z Ultra con pantalla plegable" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Smartphones</span>
+            <h3 class="product-name">Galaxy Z Ultra</h3>
+            <div class="product-rating">★★★★★ <span>(567 reseñas)</span></div>
+            <div class="product-price-row">
+              <div>
+                <span class="product-price">$24,999</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-add-to-cart" data-name="Galaxy Z Ultra">
+                🛒 Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">E-Commers Tecnm</span>
+        <p>Tu destino de tecnología y moda al mejor precio.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="registro.html">Crear cuenta</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@E-Commers Tecnm.mx">hola@E-Commers Tecnm.mx</a></li>
+          <li><a href="tel:+525512345678">55 1234 5678</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 E-Commers Tecnm. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ en México</span>
+    </div>
+  </footer>
+
+  <!-- ═══ TOAST CONTAINER ═══════════════════════════════════ -->
+  <div id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
